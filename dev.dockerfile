@@ -9,7 +9,7 @@ ENV PATH="$PNPM_HOME:$PATH"
 
 WORKDIR /nats
 
-RUN apk update && apk --no-cache add --no-cache gcompat libstdc++
+RUN apk update && apk --no-cache add --no-cache gcompat libstdc++ git
 
 RUN corepack enable
 
